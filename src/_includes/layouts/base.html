@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    {% include 'partials/site-head.html' %}
+    <main tabindex="-1" id="main-content">
+        <!-- Creates a named placeholder for all blocks named "content" in other templates-->
+        {% block content %}
+        <!-- We can also use it to define placeholder which is overwritten if a block exists -->
+        {% endblock %}
+    </main>
+</body>
+
+</html>
