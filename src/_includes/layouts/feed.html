@@ -5,6 +5,7 @@
 {% set postListItems = pagination.items %}
 
 {# If this is a tag, grab those items instead as one large collection #}
+{# This alias allows us to retrieve the correct collection for the specific tag #}
 {% if tag %}
     {% set postListItems = collections[tag] %}
     {% set pageHeaderTitle = 'Blog posts filed under “' + tag + '”' %}
