@@ -13,6 +13,11 @@ module.exports = (config) => {
     ).filter((x) => x.data.featured);
   });
 
+  // Returns a collection of blog posts in reverse chronological order
+  config.addCollection('blog', (collection) => {
+    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+  });
+
   config.addPassthroughCopy('./src/images/');
   return {
     // Specify templating engines
