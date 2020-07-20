@@ -5,7 +5,8 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,11 @@
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-cache-assets": "^2.0.3",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "moment": "^2.27.0"
+    "concurrently": "^5.2.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "moment": "^2.27.0",
+    "sass": "^1.26.10"
   }
 }
