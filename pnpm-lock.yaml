@@ -4,6 +4,7 @@ dependencies:
   '@11ty/eleventy-plugin-rss': 1.0.7
   concurrently: 5.2.0
   get-google-fonts: 1.2.2
+  gorko: 0.2.1
   gulp: 4.0.2
   gulp-clean-css: 4.3.0
   gulp-imagemin: 7.1.0_gulp@4.0.2
@@ -2869,6 +2870,12 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha512-5mwUoSuBk44Y4EshyiqcH95ZntbDdTQqA3QYSrxmzj28Ai0vXBGMH1ApSANH14j2sIRtqCEyg6PfsuP7ElOEDA==
+  /gorko/0.2.1:
+    dependencies:
+      sass: 1.26.10
+    dev: false
+    resolution:
+      integrity: sha512-8DPEIZKPeWbvUjBMBl53YIFSNWd9LKA/OrqBdceSISsB0Y0cEx7HBGcVC1fepKxm8VHb1HUUdP9lGsk7VifW6A==
   /got/7.1.0:
     dependencies:
       decompress-response: 3.3.0
@@ -7320,6 +7327,7 @@ specifiers:
   '@11ty/eleventy-plugin-rss': ^1.0.7
   concurrently: ^5.2.0
   get-google-fonts: ^1.2.2
+  gorko: ^0.2.1
   gulp: ^4.0.2
   gulp-clean-css: ^4.3.0
   gulp-imagemin: ^7.1.0
