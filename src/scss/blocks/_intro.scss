@@ -1,0 +1,11 @@
+.intro {
+    // Default is a single column layout where the header overlaps the media
+    display: grid;
+    grid-template-rows: get-size('700') minmax(0, 1fr) get-size('700') auto;
+    grid-gap: get-size('500');
+
+    // Force items to span 1 column
+    >* {
+        grid-column: 1;
+    }
+}

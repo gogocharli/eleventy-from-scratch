@@ -27,13 +27,22 @@
 </head>
 
 <body>
-    {%- include 'partials/site-head.html' -%}
-    <main tabindex="-1" id="main-content">
-        <!-- Creates a named placeholder for all blocks named "content" in other templates-->
-        {%- block content %}
-        <!-- We can also use it to define placeholder which is overwritten if a block exists -->
-        {% endblock -%}
-    </main>
+    <div class="site-wrap">
+        {%- include 'partials/site-head.html' -%}
+
+        <main tabindex="-1" id="main-content">
+            <!-- Creates a named placeholder for all blocks named "content" in other templates-->
+            {%- block content %}
+            <!-- We can also use it to define placeholder which is overwritten if a block exists -->
+            {% endblock -%}
+        </main>
+
+        <footer role="contentinfo" class="site-foot">
+            <div class="wrapper">
+                <p>This is a made up agency for the course, <a href="https://piccalil.li/course/learn-eleventy-from-scratch/">“Learn Eleventy From Scratch”</a>.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
