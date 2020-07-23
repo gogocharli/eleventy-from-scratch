@@ -1,4 +1,10 @@
 .intro {
+    @supports (display: grid) {
+        >* {
+            margin: 0;
+        }
+    }
+
     // Default is a single column layout where the header overlaps the media
     display: grid;
     grid-template-rows: get-size('700') minmax(0, 1fr) get-size('700') auto;
